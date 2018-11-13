@@ -96,6 +96,10 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+# Browser
+PRODUCT_PACKAGES += \
+    Gello
+
 # Camera
 PRODUCT_PACKAGES += \
     libbson \
@@ -227,9 +231,8 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster HAL
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
-
+                    android.hardware.keymaster@3.0-impl \
+                    android.hardware.keymaster@3.0-service
 # IDC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc
@@ -239,6 +242,7 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
     lights.msm8953
+
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -407,11 +411,14 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-#Thermal
+# Launcher3
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service \
-    thermal.msm8953
+    Launcher3
+
+#Thermal
+PRODUCT_PACKAGES += android.hardware.thermal@1.0-impl \
+                    android.hardware.thermal@1.0-service \
+                    thermal.msm8953
 
 PRODUCT_PACKAGES += \
     libcurl \
