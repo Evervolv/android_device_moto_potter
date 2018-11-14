@@ -18,7 +18,7 @@
 $(call inherit-product, device/moto/potter/full_potter.mk)
 
 # Inherit some common EV stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/ev/config/common_full_phone.mk)
 
 # Boot animation
 TW_THEME := portrait_hdpi
@@ -26,14 +26,14 @@ BOOT_ANIMATION_SIZE := 1080p
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := du_potter
+PRODUCT_NAME := ev_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G5 Plus"
+    PRODUCT_NAME="Moto G5 Plus" \
     BUILD_FINGERPRINT=motorola/potter/potter:7.0/NPN25.137-67/75:user/release-keys \
     PRIVATE_BUILD_DESC="potter-7.0/NPN25.137-67/75:user/release-keys" \
     PRODUCT_NAME="Moto G5 Plus"

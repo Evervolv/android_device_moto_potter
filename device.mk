@@ -96,10 +96,6 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
-# Browser
-PRODUCT_PACKAGES += \
-    Gello
-
 # Camera
 PRODUCT_PACKAGES += \
     libbson \
@@ -285,7 +281,6 @@ PRODUCT_PACKAGES += \
     libandroid_net_32
 
 PRODUCT_PACKAGES += \
-    libnfc \
     NfcNci \
     Tag \
     com.android.nfc_extras \
